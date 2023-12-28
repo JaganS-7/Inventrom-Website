@@ -1,8 +1,5 @@
 //--------------function for toggle-menu and navigation-section ---------------------------------------------------------------------------------------
 
-//testing for changes to push on github
-//now for command prompt windows
-
 // Function to open navigation menu
 function openNav() {
     if (window.innerWidth <= 768) {
