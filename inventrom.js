@@ -1,5 +1,7 @@
 //--------------function for toggle-menu and navigation-section ---------------------------------------------------------------------------------------
 
+//testing for changes to push on github
+
 // Function to open navigation menu
 function openNav() {
     if (window.innerWidth <= 768) {
