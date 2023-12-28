@@ -1,6 +1,6 @@
 # Inventrom-Website
 
-## Website Development
+## Frontend Web Development
 
 Developed a modern and responsive single-page UI for [www.inventrom.com](#) using HTML, CSS, and JavaScript. The project comprises six key components.
 
