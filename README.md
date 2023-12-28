@@ -12,6 +12,9 @@ Developed a modern and responsive single-page UI for [www.inventrom.com](#) usin
 - [Contact Section](#5-contact-section)
 - [Footer](#6-footer)
 
+- [Responsive Design](#responsive-design)
+- [Additional Features](#additional-features)
+
 ## 1. Navigation Bar
 A sleek navigation bar featuring a logo and three links, enabling smooth scrolling to respective sections. Similar to the user-friendly navigation of [www.boltiot.com](https://www.boltiot.com/).
 
@@ -25,10 +28,13 @@ A dynamically styled section introducing Inventrom, with responsive adjustments 
 Showcased awards with a distinctive design, incorporating hover effects and responsive adjustments for optimal user interaction.
 
 ## 5. Contact Section
-A responsive contact form, icons, and a submission button designed to provide users with an intuitive and seamless experience.
+A responsive contact form, icons, and a submission button are designed to provide users with an intuitive and seamless experience.
 
 ## 6. Footer
 Engineered a responsive footer with social icons and a dynamic theme toggle button, ensuring a harmonious blend of aesthetics and functionality.
+
+## Responsive Design
+Ensured a responsive design to deliver an optimal user experience on both desktop/laptop and mobile devices. The website dynamically adjusts its layout and elements to provide a seamless and visually appealing interface across various screen sizes.
 
 ## Additional Features
 - Implemented a dynamic theme toggle for enhanced user customization.
