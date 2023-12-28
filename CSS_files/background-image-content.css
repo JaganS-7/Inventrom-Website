@@ -1,0 +1,100 @@
+/*----------------Backgrounf Image Style ----------------------------------------------*/
+.bg-image-content{
+    background-image: url("../resources/background-layer.png");
+    height: 800px;
+    width: 100%;    /* background image take entire width of its container */
+    display: flex;  /* becomes a flex container, allowing its children to become flex items. */
+    flex-direction: column;
+    background-attachment: fixed; /* for parallax effect */
+}
+
+.bg-image-content span{   
+    text-align: center;
+    justify-content: center; /* center to background-image */
+}
+
+.bolt-quote{
+    color: white;  
+    letter-spacing: 2px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 16%; 
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+}
+
+#bolt-link{
+    color: white; 
+    text-decoration: none;  
+}
+
+#bolt-link:hover{ 
+    font-weight: bold; 
+}
+
+/* bg-image-content fadeInUp effect */
+.bolt-quote, #bolt-link{
+    opacity: 0;
+    transform: translateY(20px); 
+    text-decoration: none;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* responsive tooltip, on hover bolt-link ,-------> copyrights, inspired from w3schools*/
+ 
+.tooltipimage {
+  visibility: hidden;
+  width: auto; 
+  display: block;
+  background-color: white;
+  color: #0a0a0a;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  bottom: 100%;
+  margin-top: 10px; 
+  height: 200px;
+}
+
+.tooltipimage::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+#bolt-link:hover .tooltipimage {
+  visibility: visible;
+}
+
+@media screen and (max-width: 768px){
+    .bg-image-content{
+        height: 900px;
+    }
+
+    .bolt-quote{
+        line-height: 30px;
+        font-size: 20px; 
+        margin-top: 70%;
+    } 
+}

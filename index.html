@@ -1,0 +1,181 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inventrom site</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  <!--icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+        
+        <link rel="stylesheet" type="text/css" href="CSS_files/General_Styles.css">
+        <link rel="stylesheet" type="text/css" href="CSS_files/Header_Section.css">
+        <link rel="stylesheet" type="text/css" href="CSS_files/background-image-content.css">
+        <link rel="stylesheet" type="text/css" href="CSS_files/About_Section.css">
+        <link rel="stylesheet" type="text/css" href="CSS_files/Awards_Section.css">
+        <link rel="stylesheet" type="text/css" href="CSS_files/Contact_Section.css">
+        <link rel="stylesheet" type="text/css" href="CSS_files/Footer_Section.css">
+        <link rel="stylesheet" type="text/css" href="CSS_files/Dark_Theme.css">
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    </head>
+    <body>  
+        <div class="overlay"></div>   <!--used in small screens only(here below  768px)-->
+        <div class="container">
+            <header class="inventrom-header">
+                <img src="resources/logo.png" alt="inventrom-logo" id="inventrom-logo" title="Inventrom Pvt Limited">
+                <nav class="inventrom-nav" id="menus">
+                    <a href="#about" class="nav-text" onclick="handleNavClick()">About</a>
+                    <a href="#awards" class="nav-text" onclick="handleNavClick()">Awards</a>
+                    <a href="#contact" class="nav-text" onclick="handleNavClick()">Contact</a>  
+                    <a href="javascript:void(0)" id="close-button" onclick="closeNav()">&times;</a>  <!--close icon-->
+                </nav>
+                <span id="menu-button" onclick="openNav()" >&#9776;</span>  <!--3 bars-->
+            </header>
+            <div class="site-content">
+                <div class="bg-image-content">
+                    <span class="bolt-quote">Bolt is an Internet of Things platform for enterprise <br> ready Iot Product and solutions</span>
+                    <span>
+                        <a href="https://www.boltiot.com/" target="_blank" id="bolt-link">
+                            CLICK TO KNOW MORE 
+                            <span class="tooltipimage">Explore possibilities with us<img src="resources/bolt-image.png" alt="Bolt Image"></span>
+                        </a>
+                    </span> 
+                </div>
+
+                <!----About section---------------------------->
+
+                <div class="about-section">
+                    <h1 id="about-us-heading">ABOUT US</h1>
+                    <p class="about-us-text">
+                        We are an award-winning IoT startup. Our team has an experience in enterprise IoT projects. Before working on Bolt platform, we have been strategic IoT consultants to various Fortune 500 companies.
+                    </p>
+                    <div class="about-div">
+                        <div class="about-card">
+                            <img src="resources/about_us_mission.png" alt="about_us_mission">
+                            <div>
+                                <h2>Our Vision</h2>
+                                <p>Build technology platform for better communication</p>
+                            </div>
+                        </div>
+                        <div class="about-card">
+                            <img src="resources/about_us_vision.png" alt="about_us_vision">
+                            <div>
+                                <h2>Our Mission</h2>
+                                <p>To build a Platform to make IoT development quick, easy, and low cost for developers. This will help in better connectivity better connectivity between humans and machines helping us all in getting the most out of machines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----Awards section---------------------------->
+
+                <div class="awards-section">
+                    <h1 id="awards-heading">AWARDS</h1>
+                    <div class="award-div">
+                        <div class="award-card">
+                            <img src="resources/award1.png" alt="award1">
+                            <div>
+                                <h2>SHOWCASE</h2>
+                                <p>INDO-US STARTUP-KONNECT PROGRAM, SILICON VALLEY.</p>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <img src="resources/award2.png" alt="award2">
+                            <div>
+                                <h2>WINNER</h2>
+                                <p>DST-LOCKHEED MARTIN INDIA INNOVATION GROWTH PROGRAM.</p>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <img src="resources/award3.png" alt="award3">
+                            <div>
+                                <h2>WINNER</h2>
+                                <p>POWER OF IDEAS.</p>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <img src="resources/award4.png" alt="award4">
+                            <div>
+                                <h2>WINNER</h2>
+                                <p>CHIEF MINISTER AWARD FOR BEST START-UP IN GOA.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----contact-section------------------------>
+
+                <div class="contact-section">
+                    <h1 id="contact-heading">GET IN TOUCH</h1>
+                    <div class="contact-div">
+                        <div class="contact-card">
+                            <div>
+                                 
+                                <!--[if lte IE 8]>
+                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                                <![endif]-->
+                                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                                <script>
+                                hbspt.forms.create({
+                                portalId: "4801849",
+                                formId: "b021b49f-c504-4b1d-ad2b-1bb9e587287c"
+                                });
+                                </script>
+
+
+                            </div>
+                            <div>Inventrom Private Limited needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at anytime. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, check out our Privacy Policy.</div>
+                            <span class="g-recaptcha" data-sitekey="INVENTROM_SITE_KEY" id="recaptcha"></span>
+                            <button href="#" class="submit-button">Submit</button>
+                        </div>
+                        <div class="contact-card">
+                            <address>
+                                <h2>Our Locations</h2>
+                                <h3>Mumbai</h3>
+                                <p>Inventrom Private Limited, Unit no. B 32-A, B-wing, 2nd Floor, Raj Industrial Complex, Military Road, Andheri East, Mumbai, Maharastra - 400059</p> 
+                                <h3>Goa</h3>
+                                <p>Inventrom Private Limited, 10, Gaspar Apartment, behind Suzuki showroom, Panjim, Goa - 403001, Near People's High School</p>
+                                     
+                                <h2>Contact Us</h2>
+                                <div class="contact-us-div">
+                                    <span class="contact-icons"><i class="mdi mdi-map-marker"></i>79, 11th Cross Rd, Binnamangala Indiranagar, Bengaluru, Karnataka 560038 India</span>
+                                    <span class="contact-icons"><i class="mdi mdi-phone"></i><a href="tel:+918881197198">(+91) 8881197198</a></span>
+                                    <span class="contact-icons"><i class="mdi mdi-email"></i><a href="mailto: support@boltiot.com">contactus@boltiot.com</a></span>
+                                </div>
+                            </address> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-----------footer-section------------->
+
+                <footer class="inventrom-footer">
+                        <span class="left-section">
+                            <p>Copyright <span><span>&copy;</span> 2021 Inventrom</span></p>
+                        </span>
+                        <nav class="social-nav">
+                            <a href="https://www.facebook.com/boltiot" target="_blank"><i class="fab fa-facebook" id="facebook-icon" title="Visit us on Facebook"></i></a>
+                            <a href="https://www.twitter.com/boltiot" target="_blank"><i class="fab fa-twitter" id="twitter-icon" title="Visit us on Twitter"></i></a>
+                            <a href="https://www.instagram.com/boltiot" target="_blank"><i class="fab fa-instagram" id="insta-icon" title="Visit us on Instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/inventrom/" target="_blank"><i class="fab fa-linkedin" id="linkedin-icon" title="Visit us on LinkedIn"></i></a>
+                        </nav>
+                        <span class="right-section">
+                            <a href="#header"><i class="fas fa-angle-double-up"></i></a>
+                        </span>
+                </footer>
+                
+            </div>
+        </div>
+
+        <div class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+            <i class="fas fa-adjust"></i>
+        </div>
+
+        <script src="inventrom.js" defer></script>
+
+    </body>
+</html>                 

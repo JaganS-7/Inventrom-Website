@@ -1,0 +1,120 @@
+/*------------------------ Header Styles ------------------------*/
+
+.inventrom-header {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    background-color: #FFFFFF;  /* white color */
+    z-index: 100;               /* stacked above those with lower values */   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+}
+
+#inventrom-logo{
+    max-width: 100%; 
+    transition: transform 0.2s ease-in-out; 
+ }
+
+#inventrom-logo:hover{
+    transform: scale(1.1);   
+}
+
+/*------------------------ Navigation Styles ------------------------*/
+.inventrom-nav a{
+    color: #0a0a0a; /* RGB values are (10, 10, 10), */
+    font-size: 15px; 
+    padding-right: 20px; 
+    text-decoration: none; 
+    padding: 10px;    
+    border-radius: 10px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.188),inset -20px -20px 60px rgba(255, 255, 255, 0.251); /* neu morphism */ 
+ }
+ 
+.inventrom-nav a:hover{
+    background-color: green; 
+    color: white;
+}
+
+.inventrom-nav a:active{
+    background-color: darkgreen;  }
+
+#menu-button, #close-button{
+    display: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    /* Header */
+    .inventrom-header {
+        padding: 10px 10px;  
+        height: 30px;
+    }
+
+    /* Logo */
+    #inventrom-logo{
+        height: 30px; 
+    }
+
+    #menu-button{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        background-color: white;
+        border-radius: 20%;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(255, 255, 255, 0.7);
+        font-size: 20px;
+        color: grey;
+    }
+
+    #menu-button:hover{ 
+        background-color: green;
+        color: white;
+        box-shadow: none;
+    }
+
+    .inventrom-nav{   
+        height: 50%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: white;
+        overflow-x: hidden;  /* close-icon hidden on overflow */
+        transition: 0.5s;
+        padding-top: 50px;  
+        border-radius: 25px 0 0 25px; 
+    }
+
+    #close-button{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 35px;
+        /*margin-left: 10px 10px 10px 30px;*/
+        color: grey;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(255, 255, 255, 0.7);
+    }
+
+    .inventrom-nav a{
+        display: block;
+        padding-right: 12%;
+        text-align: right;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(255, 255, 255, 0.7);
+        margin: 5px;
+    }
+}

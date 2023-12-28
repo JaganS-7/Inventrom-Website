@@ -1,0 +1,81 @@
+/*--------------------Awards section---------------------------------------------------------------------------------------*/
+
+#awards-heading{
+    text-align: center;
+    color: #139139;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 25px;
+    padding: 20px 0 40px 0;
+}
+
+.awards-section{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0; 
+}
+
+.award-div{
+    display: flex; 
+    max-width: 90%;  
+    margin-bottom: 70px; 
+}
+
+.award-div h2{
+    color: black; 
+    border-bottom: 1px dashed grey;
+    display: inline-block;   /* border only takes the width of text */
+    padding-bottom: 10px; 
+    margin-bottom: 0px;     /* remove default bottom margin */
+}
+
+.award-card p{
+    margin-top: 10px;
+}
+
+.award-card{
+    flex: 1; /* equally distributed horizontall, in same line */
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    margin: 10px; 
+}
+
+.award-card img{
+    max-width: 100%; 
+}
+
+/* about-cards for viewport animation */
+.award-card {
+    opacity: 0;
+    transform: translateY(20px);
+    
+}
+
+.award-card.fade-in:hover {
+    transform: scale(1.1);
+}
+
+.award-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .award-div {
+        flex-direction: column;  
+        align-items: center;  
+    }
+
+    .award-card {
+        width: 60%;   
+    }
+
+    .award-card p{
+        text-align: center;
+    }
+}

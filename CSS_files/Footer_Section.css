@@ -1,0 +1,100 @@
+/*------------------inventrom-footer-----------------------------------------------------------------------------------*/
+
+.inventrom-footer{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #139139; 
+    color: white;
+    height: 100px;
+    padding: 0 20px;
+}
+
+.left-section, .social-nav, .right-section{
+    flex: 1;                  /* equally distributed horizontally */
+    display: flex;
+    justify-content: center;
+}
+
+.left-section p, span{
+    display: flex;     /* make both contents to be horizontal */ 
+}
+
+
+.left-section span{
+    margin: 0 3px;  /* space among individual items from left&right*/
+}
+
+.social-nav a{
+    margin: 0 5px;   
+}
+
+.social-nav a i, .right-section a i {
+    font-size: 20px;
+    color: white; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-nav a:hover i, .right-section a:hover i{
+    transform: scale(1.4);  
+}
+
+#facebook-icon:hover{
+    color: #1877F2;  /* facebook color */
+    background-color: white;
+    border-radius: 50px;  
+}
+
+#twitter-icon:hover{
+    color: #1DA1F2;  /* twitter color */
+    background-color: white;
+    border-radius: 50px; 
+}
+
+#insta-icon:hover{
+    background: linear-gradient(45deg, #833ab4, #fd1d1d, #ff8c00);
+    color: white;  
+    border-radius: 5px;    
+}
+
+#linkedin-icon:hover{
+    color: #0077B5;  /* linkedin color */
+    background-color: white;
+    border-radius: 2px;   
+}
+
+.right-section a i {
+    transition: color 0.3s ease-in-out;
+}
+
+.right-section a:hover i {
+    animation: blinkEffect 0.5s infinite alternate;
+}
+
+@keyframes blinkEffect {
+    0% {
+        color: transparent;
+        transform: translateY(0);
+    }
+    100% {
+        color: white;
+        transform: translateY(-4px); /* Adjust the distance the icon moves */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .left-section p{
+       font-size: 0;         /*removing "Copyright" word fo small screen*/
+       white-space: nowrap;  /*preventing line breaking*/
+    }
+
+    .left-section span{  
+        font-size: 14px;
+        margin-left: 3px;
+    }
+
+    .social-nav a i{
+        margin: 3px;   
+    }
+}

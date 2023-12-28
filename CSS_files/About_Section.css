@@ -1,0 +1,81 @@
+/*------------------About section Styles---------------------------------------------------------------------------------*/
+
+#about-us-heading{
+    text-align: center;
+    color: #139139;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 25px;
+    padding: 10px 0 20px 0;
+}
+
+.about-us-text{
+    margin: 5px 145px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-section{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0; /* remove any default paddings */
+}
+
+.about-div{
+    display: flex; 
+    max-width: 80%; 
+    margin-bottom: 20px; 
+}
+
+.about-div h2{
+    color: black;
+}
+
+.about-card{ 
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    padding: 20px; 
+    background-color: #F8F9FE;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+}
+
+.about-card img{
+    max-width: 100%; 
+}
+
+/* about-cards for viewport animation */
+.about-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.about-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive styles for the About section on smaller screens */
+@media screen and (max-width: 768px){
+    .about-us-text{
+    margin: 5px 50px;
+    text-align: left;
+    }
+
+    .about-div {
+        flex-direction: column;  
+        align-items: center;  
+    }
+
+    .about-div h2,p{
+    text-align: left;
+    }
+
+    .about-card {
+        width: 80%; 
+    }
+}
