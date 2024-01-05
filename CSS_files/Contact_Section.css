@@ -67,32 +67,6 @@
     text-decoration: underline;
 } 
 
-#recaptcha{
-    margin-top: 10px;
-    transform: scale(0.8);
-    margin-left: -25px;  /* from default place to left */
-}
-
-.submit-button { 
-    text-align: center;
-    width: 50%;
-    padding: 10px 0;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer; 
-    border-radius: 25px;  
-    border: 2px solid white;
-    box-shadow: 20px 20px 60px #00000030,inset -20px -20px 60px #ffffff40; /* neu morphism */
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.submit-button:active{
-    background-color: green;
-    color: white;
-    box-shadow: none;
-    transform: scale(1.02);
-}
-
 @media screen and (max-width: 768px) {
     .contact-div {
         flex-direction: column;  
