@@ -70,17 +70,6 @@
 	border: none;
 }
 
-.dark-theme .submit-button{
-	background-color: #333;
-	border: none;
-	color: white;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.dark-theme .submit-button:hover{
-	background-color: green;
-}
-
 @media screen and (max-width: 768px) {
 	.theme-toggle{
 		bottom: 100px;
